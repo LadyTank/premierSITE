@@ -1,0 +1,48 @@
+body {
+    background: pink;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+    background-color:greenyellow;
+}
+
+header {
+    background-color: salmon;
+    float: left;
+    width: 1200px;
+    height: 150px;  
+}
+
+aside{
+    background-color: burlywood;
+    width: 200px;
+    float: left;
+    min-height: 500px;
+}
+
+section {
+    background-color: honeydew;
+    width: 800px;
+    float: left;
+    min-height: 500px;
+}
+
+div {
+    background-color: orange;
+    width: 200px;
+    float: left;
+    min-height: 500px;
+}
+
+
+.basvert {
+    background: greenyellow;
+}
+
+#clear {
+    clear: both;
+}

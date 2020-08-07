@@ -1,0 +1,30 @@
+body {
+    background: pink;
+}    
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: plum;
+}
+
+header {
+    background-color: salmon;
+    float: left;
+    width: 1200px;
+    height: 150px;  
+}
+
+aside{
+    background-color: red;
+    width: 200px;
+    float: left;
+    min-height: 500px;
+}
+
+section {
+    background-color: honeydew;
+    width: 1000px;
+    float: left;
+    min-height: 500px;
+}
