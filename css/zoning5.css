@@ -1,0 +1,68 @@
+body {
+    background: url(../img/concrete-texture.png);
+    width: 1200px;
+    margin: auto; 
+    text-align: center; 
+}
+
+.clear {
+    clear: both;
+}
+
+#zoning5 {
+	width: 1000px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+#zoning5 header {
+	height: 80px;
+	background-color: aquamarine;
+}
+
+#zoning5 nav {
+    background-color: thistle;
+    /* border: none; */
+}
+
+#zoning5 nav p {
+    margin-top: 0;
+}
+
+#zoning5 section {
+    background-color: azure;
+    height: 100px;
+    margin: 20px;
+}
+
+#zoning5 .a {
+    background-color: teal;
+    float: left;
+    width: 480px;
+    height: 250px;
+    /* text-align: center; */
+}
+
+#zoning5 .b {
+    background-color: wheat;
+    float: left;
+    width: 480px;
+    height: 250px;
+
+}
+
+#zoning5 .c {
+    background-color: blue;
+    float: left;
+    width: 480px;
+    height: 250px;
+
+}
+
+#zoning5 .d {
+    background-color: purple;
+    float: left;
+    width: 480px;
+    height: 250px;
+
+}

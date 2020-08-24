@@ -1,0 +1,35 @@
+body {
+    background: url(../img/concrete-texture.png);
+    width: 1200px;
+    margin: auto;  
+}
+
+.clear {
+    clear: both;
+}
+
+section {
+    width: 600px;
+    float: left;
+    background-color: skyblue;
+    text-align: center;
+    min-height: 500px   ;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    height: 5px;
+    width: 1200px;
+    background-color: pink;
+}
+
+footer {
+    background-color: springgreen;
+    text-align: center;
+    height: 50px;
+}
+
+footer p {
+    margin: 0;
+}
