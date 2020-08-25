@@ -1,0 +1,37 @@
+body {
+    background-color: rgba(210, 235, 173, 0.699);
+    color: #fff;
+}
+
+.clear {
+    clear: both;
+}
+
+/* les couleurs pour les div */
+.rose, .corail {
+    height: 10em;
+    width: 10em;
+    border: 0.2em solid whitesmoke;
+}
+
+.rose {
+    background-color: pink;
+}
+
+.corail {
+    background-color: coral;
+}
+
+/* les styles commmuns aux dov de la page */
+.c1, .c2 {
+    height: 10em;   
+    width: 10em;
+    border: 0.2em solid white;
+    float: left;
+
+    border-radius: 10% 5% 40% 0%;
+
+    margin: 1px;
+
+    text-align: center;
+}

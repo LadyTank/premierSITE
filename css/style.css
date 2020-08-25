@@ -320,7 +320,7 @@ img[src="img/toureiffel.jpg"] {
 }
 
 #zoning2 header {
-	background-color:purple;
+	background-color:rgba(165, 34, 165, 0.699);
 	height: 70px;
 }
 
@@ -375,14 +375,14 @@ img[src="img/toureiffel.jpg"] {
 }
 
 #zoning4 header {
-    background-color:greenyellow;
+    background-color:rgba(155, 241, 24, 0.466);
     width: 800px;
     height: 90px;
     /* margin: 0; */
 }
 
 #zoning4 nav {
-    background-color: deepskyblue;
+    background-color: rgb(168, 223, 241);
     width: 800px;
     min-height: 20px;
 	border: none;
@@ -393,27 +393,66 @@ img[src="img/toureiffel.jpg"] {
 }
 
 #zoning4 section {
-    background-color:yellow;
+    background-color:rgba(245, 214, 42, 0.747);
     height: 500px;
     margin: 20px;
 }
 
 #zoning4 footer {
-    background-color: orange;
+    background-color: rgb(245, 186, 78);
     height: 50px;
 }
 
 #zoning5 {
-	width: 1000px;
-	background-color: #fff;
+	background-color: rgb(247, 183, 238);
 	margin: 0 auto;
+	text-align: center;
+	width: 1000px;
 }
 
-#zoning5 header {
-	height: 80px;
-	background-color: aquamarine;
+#zoning5  header{
+	height: 100px;
+	background-color: rgba(148, 71, 122, 0.466);
 }
 
+#zoning5 nav {
+	height: 50px;
+	background: rgb(189, 51, 120);
+	border: none;
+}
+
+#zoning5 section {
+	background: #2c3e50;
+	margin: 20px;
+	padding: 0;
+
+}
+
+#zoning5 .section .z1, .z2, .z3, .z4 {
+	height: 250px;
+	width: 50%;
+	float: left;
+	color: #fff;
+}
+
+#zoning5 .section .z1, .z2, .z3, .z4 p {
+	line-height: 250px;
+}
+
+#zoning5 .z1, .z4 {
+	background-color: rgb(69, 189, 189);
+}
+
+
+#zoning5 .section .z2, .z3 {
+	background-color: rgb(187, 53, 169);
+}
+
+#zoning5 footer {
+	height: 100px;
+	background-color: rgba(61, 179, 110, 0.678);
+
+}
 /* a terminer */
 
 /* page position */
