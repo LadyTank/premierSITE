@@ -1,0 +1,139 @@
+body {
+    background: url(../img/concrete-texture.png);
+}
+
+#zoning6 {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: pink;
+    color: #fff;
+}
+
+#zoning6 header {
+    height: 200px;
+}
+
+.clear {
+    clear: both;
+}
+
+.haut1 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: tomato;
+}
+
+.haut2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: rgb(20, 125, 151);
+}
+
+.haut3 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: turquoise;
+}
+
+/* .haut1, .haut3 {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.haut2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: teal;
+}
+
+.bg_tomato {
+    background-color: tomato;
+}
+
+.bg_turqoise {
+    background-color: turquoise;
+} */
+
+#zoning6 nav {
+    height: 50px;
+    background-color: lightblue;
+}
+
+/* #zoning6 p {
+    margin: 0 auto;
+} */
+
+#zoning6 aside {
+    width: 25%;
+    height: 500px;
+    float: left;
+    background-color: thistle;
+}
+
+#zoning6 section {
+    width: 75%;
+    float: left;
+    background-color: lightgreen;
+}
+
+#zoning6 .a {
+    height: 200px;
+    width: 50%;
+    float: left;
+    background-color: wheat;
+}
+
+#zoning6 .b {
+    height: 200px;
+    width: 50%;
+    float: left;
+    background-color: rgb(3, 2, 0);
+}
+
+#zoning6 .diaporama {
+    height: 200px;
+    background-color: red;
+}
+
+#zoning6 .c {
+    width: 25%;
+    height: 100px;
+    float: left;
+    background-color: lime;
+}
+
+#zoning6 .d {
+    width: 25%;
+    height: 100px;
+    float: left;
+    background-color: rgb(101, 138, 101);
+}
+
+#zoning6 .e {
+    width: 25%;
+    height: 100px;
+    float: left;
+    background-color: lime;
+}
+
+#zoning6 .f {
+    width: 25%;
+    height: 100px;
+    float: left;
+    background-color: rgb(146, 231, 146);
+}
+
+#zoning6 footer {
+    height: 50px;
+    background-color: #333;
+}
+
+#zoning6 footer p {
+    margin: 0 auto;
+}
