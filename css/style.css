@@ -206,6 +206,13 @@ button {
 	bottom: 40px;
 	right: 20px;
 }
+
+button :hover {
+	box-shadow: 0 0 0 3px yellow;
+	border-radius: 50%;
+	
+}
+
 /* style de la page texte */
 blockquote {
 	font-family: 'Lemonada', cursive;
@@ -463,6 +470,7 @@ img[src="img/toureiffel.jpg"] {
 	background-color: #6acafc;
 	margin: 0 auto;
 }
+
 /* position absolute */
 .absolute {
 	height: 100px;
@@ -494,4 +502,183 @@ img[src="img/toureiffel.jpg"] {
 	position: absolute;
 	right: 0;
 	top: 0;
+}
+
+/* pourcentage */
+ .trente {
+	width: 30%;
+	padding: 20px;
+	font-size: 22px;
+	background-color: red;
+	color: powderblue;
+}
+
+.cinquante {
+	font-size: 22px;
+	width: 50%;
+	background: rgba(255, 123, 0, 0.753);
+	padding: 20px;
+	color: #fff;
+}
+
+.cent {
+	font-size: 22px;
+	width: 100%;
+	background: pink;
+	padding: 20px;
+	color: green;
+}
+
+/* float */
+
+.float {
+	height: 170px;
+	width: 170px;
+	background-color: yellow;
+	border: 2px solid darkred;
+	margin: 10px;
+	padding-top: 2px;;
+	float: left;
+
+	text-align: center;
+	font-size: 22px;
+}
+
+.dernier {
+	height: 170px;
+	width: 170px;
+	background-color: yellow;
+	border: 2px solid darkred;
+	padding-top: 2px;
+
+	margin: 10px;
+
+	text-align: center;
+	font-size: 22px;
+}
+
+/* exemple sur le float */
+
+.zone {
+	height: 70px;
+	background-color: #333;
+}
+
+.zone1, .zone2, .zone3, .zone4 {
+	height: 250px;
+	width: 25%;
+	float: left;
+}
+
+.zone1 {
+	background: rgb(20, 32, 199);
+}
+
+.zone2 {
+	background: rgb(216, 50, 50);
+}
+
+.zone3 {
+	background: rgb(197, 175, 175);
+}
+
+.zone4 {
+	background: rgb(131, 170, 39);
+}
+
+/* la page des liens */
+
+.ancre {
+	text-align: center;
+	padding: 100px;
+}
+
+.ancre a {
+	margin: 8px;
+	padding: 5px 10px;
+	background: lightgray;
+	box-shadow: 0px 0px 10px 3px rgb(38, 111, 206);
+	color: #2c3e50;
+	text-decoration: none;
+	border-radius: 0 15px 15px 15px;
+}
+
+.ancre a:hover {
+	box-shadow: none;
+	transition-duration: 0.5s;
+	text-shadow: 1px 5px 10px rgb(230, 34, 60);
+}
+
+/* le menu de l'id menu */
+
+#menu nav {
+	background: transparent;
+	border: none;
+}
+
+#menu ul {
+	list-style: none;
+	text-align: center;
+}
+
+#menu ul li {
+	display: inline-block;
+}
+
+#menu nav a {
+	padding: 10px;
+	color: grey;
+	text-decoration: none;
+	background: #ddd;
+	transition: 1s ease-in;
+}
+
+#menu nav a:hover {
+	color: #fff;
+	background: #069;
+}
+
+/* Le menu avec les menus déroulants */
+
+#menuDeroulant {
+	height: 650px;
+}
+
+#menuDeroulant nav {
+	width: 90%;
+	background: transparent;
+	border: none;
+	margin: 0 auto;
+}
+
+#menuDeroulant nav ul li {
+	list-style: none;
+	width: 20%;
+	float: left;
+}
+
+#menuDeroulant ul ul {
+	display: none;
+}
+
+#menuDeroulant nav ul li ul li {
+	border-top: 1px solid rgb(53, 13, 13);
+	width: 100%;
+}
+
+#menuDeroulant nav li {
+	background: #ccc;
+}
+
+#menuDeroulant nav li a {
+	display: block;
+	padding: 4px 0;
+}
+
+#menuDeroulant ul {
+	text-align: center;
+}
+
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2 {
+	display: block;
 }

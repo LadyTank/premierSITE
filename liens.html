@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- la description est indispensable pour les moteurs de recherche et s'affiche dans les résultats -->
+    <meta name="description" content="Mon premier site avec Colombbus : groupe de Suresnes">
+     <!-- les mots clefs utiles pour les moteurs de recherche moins utilisées de nos jours -->
+    <meta name="keywords" content="HTML, CSS, Justine Périnel, Colombbus, Suresnes, premier site, 2020">
+    <meta name="author" content="Justine Périnel">
+    <title>PremierSITE - position</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> 
+    <!-- LES ICÔNES EMBARQUÉES DEPUIS FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/c194d650bf.js" crossorigin="anonymous"></script>
+    <!-- <link rel="icon" href=""> -->
+    <!-- Feuille de style CSS de PremierSITE -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#logo">
+                <button type="button"><i class="fas fa-arrow-alt-circle-up"></i></button></a>
+            <img src="img/logo.png" alt="Logo de la page">
+        </div> <!-- fin id logo -->
+        <div id="slogan">
+            <a href="index.html" title="Mon premier site en HTML/CSS">
+                <h1>Mon premier site en HTML5 et CSS 3</h1></a>
+        </div> <!-- fon id slogan  -->
+        <div id="social">
+            <a href="https://www.instagram.com/?hl=fr" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://fr-fr.facebook.com/" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </header> <!-- fin header -->
+    <nav>
+        <div class="ancreNav">
+            <a href="index.html" title="Accueil">Accueil</a>
+            <a href="texte.html" title="Texte" >Texte</a>
+            <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
+            <a href="image.html" title="Images" >Images</a>
+            <a href="position.html" title="Position">Position</a>
+            <a href="zoning.html" title="Zoning">Zoning</a>
+            <a href="tableau.html" title="Tableaux">Tableaux</a>
+            <a href="liste.html" title="Listes">Listes</a>
+            <a href="liens.html" title="Liens" class="active">Liens</a>
+            <a href="formulaire.html"  title="Formulaire">Formulaire</a>
+            <a href="multimedia.html" title="Multimedia">Multimedia</a>
+            <a href="animation.html" title="Animations">Animations</a>
+            <a href="recap.html" title="Récapitulatif">Récapitulatif</a>
+        </div>
+    </nav>
+
+    <main>
+    <!-- <main> contenu principal -->
+        <h2>Liens <i class="fas fa-anchor"></i></h2>
+        
+        <div class="ancre">
+            <a href="#liens">Les liens</a>
+            <a href="#menu">Un menu</a>
+            <a href="#menuDeroulant">Un menu déroulant</a>
+        </div>
+    
+        <section>
+            <h3 id="liens">Les liens</h3>
+            <!-- un lien vers code pen -->
+            <p>
+                <a target="_blank" title="Code Pen" href="https://codepen.io/">Code Pen</a> pour s'entrainer au code
+            </p>
+            <!-- un lien vers le site de votre choix -->
+            <p>
+                <a href="https://www.suicidegirls.com/" target="_blank"  title="Suicide Girls">Suicide Girls </a>pour le plaisir des yeux
+            </p>
+            <!-- liens vers le fichier pdf  -->
+           
+                <a href="document/SURESNES_planning_20_21.pdf" target="_blank" title="Planning">Clic</a> Planning en cours
+            
+
+        </section>
+   
+        <section id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Parcours</a></li>
+                        <li><a href="#">Réalisations</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>  
+                </nav>
+        </section>
+
+        <section id="menuDeroulant">
+            <h3>Un menu déroulant</h3>
+            <nav>
+                <ul class="niveau1">
+                    <li><a href="#" title="Accueil">Accueil</a></li>
+                    <li class="sousMenu">
+                        <a href="#" title="Formation">Formation</a>
+                        <ul class="niveau2">
+                            <li><a href="#" title="Etudiants">Etudiants</a></li>
+                            <li><a href="#" title="Emploi du temps">Emploi du temps</a></li>
+                            <li><a href="#" title="Recherche d'emploi">Recherche d'emploi</a></li>
+                            <li><a href="#" title="Documents">Documents</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Informations">Informations</a></li>
+
+                    <li class="sousMenu">
+                        <a href="#" title="Cours">Cours</a>
+                        <ul class="niveau2">
+                            <li><a href="#" title="Internet">Internet</a></li>
+                            <li><a href="#" title="HTML/CSS">HTML/CSS</a></li>
+                            <li><a href="#" title="CMS">CMS</a></li>
+                            <li><a href="#" title="Stats">Stats</a></li>
+                            <li><a href="#" title="Réseaux sociaux">Réseaux sociaux</a></li>
+                            <li><a href="#" title="Référencement">Référencement</a></li>
+                            <li><a href="#" title="Marketing">Marketing</a></li>
+                            <li><a href="#" title="Cahier des charges">Cahier des charges</a></li>
+                            <li><a href="#" title="Photoshop">Photoshop</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Mon CV">Mon CV</a></li>
+                </ul>
+            </nav>
+
+        </section>
+        
+    </main> <!-- fin de main  -->
+    <footer> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis repudiandae eaque veniam dolores nesciunt omnis fugit iste tenetur ducimus optio numquam itaque expedita vitae nihil, libero rerum. Impedit, excepturi?</p></footer>
+   </body>
+</html>
