@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- la description est indispensable pour les moteurs de recherche et s'affiche dans les résultats -->
+    <meta name="description" content="Mon premier site avec Colombbus : groupe de Suresnes">
+     <!-- les mots clefs utiles pour les moteurs de recherche moins utilisées de nos jours -->
+    <meta name="keywords" content="HTML, CSS, Justine Périnel, Colombbus, Suresnes, premier site, 2020">
+    <meta name="author" content="Justine Périnel">
+    <title>PremierSITE - Animation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> 
+    <!-- LES ICÔNES EMBARQUÉES DEPUIS FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/c194d650bf.js" crossorigin="anonymous"></script>
+    <!-- <link rel="icon" href=""> -->
+    <!-- Feuille de style CSS de PremierSITE -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#logo">
+                <button type="button"><i class="fas fa-arrow-alt-circle-up"></i></button></a>
+            <img src="img/logo.png" alt="Logo de la page">
+        </div> <!-- fin id logo -->
+        <div id="slogan">
+            <a href="index.html" title="Mon premier site en HTML/CSS">
+                <h1>Mon premier site en HTML5 et CSS 3</h1></a>
+        </div> <!-- fon id slogan  -->
+        <div id="social">
+            <a href="https://www.instagram.com/?hl=fr" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://fr-fr.facebook.com/" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </header> <!-- fin header -->
+    <nav>
+        <div class="ancreNav">
+            <a href="index.html" title="Accueil">Accueil</a>
+            <a href="texte.html" title="Texte" >Texte</a>
+            <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
+            <a href="image.html" title="Images">Images</a>
+            <a href="position.html" title="Position">Position</a>
+            <a href="zoning.html" title="Zoning">Zoning</a>
+            <a href="tableau.html" title="Tableaux">Tableaux</a>
+            <a href="liste.html" title="Listes">Listes</a>
+            <a href="liens.html" title="Liens">Liens</a>
+            <a href="formulaire.html" title="Formulaire">Formulaire</a>
+            <a href="multimedia.html" title="Multimedia">Multimedia</a>
+            <a href="animation.html" title="Animations" class="active">Animation</a>
+            <a href="recap.html" title="Récapitulatif">Récapitulatif</a>
+        </div>
+    </nav>
+    <main> 
+        <h2>Animation <i class="fas fa-comment"></i></h2>
+            <section>
+                <h3>Infobulles <i class="far fa-comment-dots"></i></h3>
+                <div class="infoBulle">
+                    <p>
+                        <a href="#">Passer la souris ! <span> Coucou, je suis une petite pop-up ! <i class="far fa-comment-dots"></i></span></a>
+                    </p>
+
+                    <p><a href="#">Içi aussi <span> et là une autre</span></a></p>
+
+                    <p><a href="#">Une 3ème <span> et là une autre !</span></a></p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Effets de survol avec des transitions et des filtres</h3>
+                <ul class="imgEffets">
+                    <li><img src="img/survol_img1.jpg" alt="La montagne"></li>
+                    <li><img src="img/survol_img2.jpg" alt="Le lac"></li>
+                    <li><img src="img/survol_img3.jpg" alt="La mer"></li>
+                    <li><img src="img/survol_img4.jpg" alt="La forêt"></li>
+                </ul>
+            </section>
+
+    </main> <!-- fin de main  -->
+    <footer> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis repudiandae eaque veniam dolores nesciunt omnis fugit iste tenetur ducimus optio numquam itaque expedita vitae nihil, libero rerum. Impedit, excepturi?</p></footer>
+   </body>
+</html>

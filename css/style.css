@@ -128,15 +128,15 @@ header a {
 /* nav navigation */
 
 nav {
-	background: #2980b9;
+	background: #25bac5;
 	height: 70px;
-	border-bottom: 8px solid #6acafc;
+	border-bottom: 8px solid #267097;
 	text-align: center;
 	padding: 15px;
 }
 
 nav a {
-	background: #2980b9;
+	background: #4098d3;
 	margin: 10px;
 	padding: 2px 10px;
 	border-radius: 10px 0;
@@ -460,6 +460,147 @@ img[src="img/toureiffel.jpg"] {
 	background-color: rgba(61, 179, 110, 0.678);
 
 }
+
+#zoning6 {
+	width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: pink;
+    color: #fff;
+}
+
+#zoning6 header {
+    height: 200px;
+}
+
+.haut1 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: tomato;
+}
+
+.haut2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: rgb(20, 125, 151);
+}
+
+.haut3 {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: turquoise;
+}
+
+/* .haut1, .haut3 {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.haut2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: teal;
+}
+
+.bg_tomato {
+    background-color: tomato;
+}
+
+.bg_turqoise {
+    background-color: turquoise;
+} */
+
+#zoning6 nav {
+	height: 50px;
+	border: none;
+    background-color: lightblue;
+}
+
+#zoning6 nav a {
+	border: none;
+	background: none;
+	padding: 0 20px;
+	color: #fff;
+}
+
+#zoning6 p {
+    margin: 0;
+}
+
+#zoning6 aside {
+    width: 25%;
+    height: 500px;
+    float: left;
+    background-color: thistle;
+}
+
+#zoning6 section {
+	width: 75%;
+	padding: 0;
+	margin: 0;
+    float: left;
+    background-color: rgb(167, 119, 185);
+}
+
+#zoning6 .a {
+    height: 200px;
+    width: 50%;
+    float: left;
+    background-color: wheat;
+}
+
+#zoning6 .b {
+    height: 200px;
+    width: 50%;
+    float: left;
+    background-color: rgb(3, 2, 0);
+}
+
+#zoning6 .diaporama {
+    height: 200px;
+    background-color: red;
+}
+
+#zoning6 .c {
+    width: 25%;
+    height: 100px;
+    float: left;
+    background-color: lime;
+}
+
+#zoning6 .d {
+    width: 25%;
+    height: 100px;
+    float: left;
+    background-color: rgb(101, 138, 101);
+}
+
+#zoning6 .e {
+    width: 25%;
+    height: 100px;
+    float: left;
+    background-color: lime;
+}
+
+#zoning6 .f {
+    width: 25%;
+    height: 100px;
+    float: left;
+    background-color: rgb(146, 231, 146);
+}
+
+#zoning6 footer {
+	height: 50px;
+	margin: 0;
+    background-color: #333;
+}
+
+
 /* a terminer */
 
 /* page position */
@@ -681,4 +822,166 @@ img[src="img/toureiffel.jpg"] {
 
 #menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2 {
 	display: block;
+}
+
+/* La page des animations */
+
+/* "camel case" ou casse différenciée */
+.infoBulle {
+	height: 250px;
+	width: 500px;
+	margin: auto;
+	padding-top: 15px;
+	background: #444444;
+	box-shadow: 0 0 50px rgb(77, 71, 71) inset;
+}
+
+.infoBulle p {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.infoBulle a {
+	color: #ccc;
+	text-decoration: none;
+	border-radius: 3px;
+	padding: 5px 15px;
+	text-shadow: 0 -2px 0 black;
+}
+
+.infoBulle a:hover {
+	color: white;
+	background: rgba(0, 0, 0, 0.4);
+	text-shadow: 0 1px 2px black;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.infoBulle a span {
+	position: absolute;
+	padding: 15px;
+	margin-top: 23px;
+	margin-left: -50px;
+	background:  rgba(0, 0, 0, 0.4);
+	border-radius: 13px;
+	/* le contenu de span disparait grace à cette ligne */
+	opacity: 0;
+	color: #09c;
+	transition: .25s;
+	/* la  mise à l'échelle transform: scale(0) fait aussi disparaitre le contenu de span */
+	transform: scale(0) rotateZ(-12deg);
+}
+
+.infoBulle a:hover span {
+
+	opacity: 1;
+	transform: scale(1) rotate(0);
+}
+
+.infoBulle a span::before {
+	/* à quoi sert ce truc? */
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 10px;
+	border-bottom: 6px solid rgba(235, 228, 228, 0.9);
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+}
+
+/* effets survols avec transitions et filtres de couleurs */
+
+.imgEffets {
+	width: 302px;
+	height: 320px;
+	margin: 70px auto;
+}
+
+.imgEffets li {
+	width: 141px;
+	/* on fabrique le carré qui contient une image (suite pour ce carré plus bas) */
+	height: 150px;
+	margin: 5px;
+	float: left;
+	list-style: none;
+}
+
+/* le 3eme li est clear both */
+.imgEffets li:nth-child(3) {
+	clear: both;
+}
+
+.imgEffets img {
+	/* on controle la position des élements car on va jouer sur leur empilement */
+	position: absolute;
+	/* toutes les images sont empilées en bas */
+	z-index: 1;
+	/* on cale l'image dans un bloc carré de 150 pixels */
+	height: 150px;
+
+	box-shadow: 0 0 3px black;
+	/* cubic bezier commence par 0 et termine par 1 et entre ces 2 valeurs nous  mettons nos propres valeurs */
+	transition: 0.5s cubic-bezier(0,3,.4,1);
+	/* pour la transition, il faut le :hover */
+}
+
+.imgEffets li:hover img {
+	z-index: 2;
+
+	transform: scale(1.5);
+
+	box-shadow: 0 0 10px black;
+
+}
+
+.imgEffets:hover li:not(:hover) img {
+	/* on passe les li qui ne sont pas survolés en niveaux de gris avec un filtre flou */
+	filter: sepia(1) blur(1px);
+}
+
+/* la page multimédia */
+
+.videoFond {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.videoFond video {
+	width: 80%;
+	position: absolute;
+	z-index: 1;
+}
+
+.videoTexte {
+	/* on décale l'élement par rapport à sa position initiale */
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+
+.videoFond p {
+	position: absolute;
+	z-index: 2;
+	width: 500px;
+	margin: auto;
+	background: rgba(255, 255, 255, 0.60);
+	left: 250px;
+	top: 150px;
+	padding: 20px;
+	font-size: 120%;
+	border-radius: 15px;
+	text-align: center;
+}
+
+/* pour les vidéos youtube embarquées */
+iframe[src="https://www.youtube.com/embed/mgfGrak7-Xs"] {
+	width: 100%;
+	min-height: 800px;
+}
+
+iframe[allowfullscreen] {
+	width: 100%;
+}
+
+.audio {
+	text-align: center;
 }
