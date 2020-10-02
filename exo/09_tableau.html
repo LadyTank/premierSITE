@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau - exercice 2</title>
+    <!-- style dans l'en tête -->
+    <style>
+
+        h1 {
+            text-align: center;
+            font-family: serif;
+        }
+
+        body {
+            background-color: rgb(255, 253, 245);
+            font-family: sans-serif;
+        }
+
+        .solution {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: rgb(204, 236, 255);
+        }
+
+        .solution td, .solution th {
+            border: 2px solid rgb(161, 217, 252);
+            height: 30px;
+            vertical-align: middle;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+
+        .solution th {
+            text-align-last: left;
+            background-color: rgb(136, 123, 253);
+            color: #ffffff;
+        }
+
+        .solution tr:nth-of-type(even) {
+            background-color: lightskyblue;
+        }
+
+        .solution caption {
+            background-color: rgb(136, 123, 253);
+            color: #ffffff;
+            font-weight: bold;
+            height: 55px;
+            line-height: 55px;
+            font-size: 1.5em;
+        }
+
+        .president {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: rgb(253, 211, 251);
+        }
+
+        .president td, .president th {
+            border: 2px solid rgb(187, 14, 178);
+            height: 30px;
+            vertical-align: middle;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+
+        .president th {
+            text-align-last: center;
+            background-color: rgb(253, 123, 246);
+            color: #ffffff;
+        }
+
+        .president tr:nth-of-type(even) {
+            background-color: rgb(255, 179, 251);
+        }
+
+        .president caption {
+            background-color: rgb(253, 123, 246);
+            color: #ffffff;
+            font-weight: bold;
+            height: 55px;
+            line-height: 55px;
+            font-size: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tableau HTML, mes magasins préférés</h1>
+
+    <table class="solution">
+        <caption>Adresses // Fournisseurs</caption>
+        <thead>
+            <!-- rangée 1 -->
+            <tr>
+                <th>Cie</th>
+                <th>Contact</th>
+                <th>Pays</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- rangée 2 -->
+            <tr>
+                <td>La pain des amis</td>
+                <td>Maria Duroc</td>
+                <td>France</td>
+            </tr>
+            <!-- rangée 3 -->
+            <tr>
+                <td>Les vinos buenos</td>
+                <td>François Duparo</td>
+                <td>Espagne</td>
+            </tr>
+            <!-- rangée 4 -->
+            <tr>
+                <td>Kangaroo & Cie</td>
+                <td>Roland Mendel</td>
+                <td>Australie</td>
+            </tr>
+            <!-- rangée 5 -->
+            <tr>
+                <td>Twinnings</td>
+                <td>Helen Spike</td>
+                <td>Royaume-Uni</td>
+            </tr>
+            <!-- rangée 6 -->
+            <tr>
+                <td>Cycles Laurent</td>
+                <td>Pierre Laurent</td>
+                <td>France</td>
+            </tr>
+            <!-- rangée 7 -->
+            <tr>
+                <td>Santini</td>
+                <td>Nanni Moretti</td>
+                <td>Italie</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table class="president">
+        <caption>Présidents</caption>
+        <tr>
+            <th>Identifiants</th>
+            <th>Noms</th>
+            <th>Prénoms</th>
+        </tr>
+        <tr>
+            <th>Numéro 1</th>
+            <td>Chirac</td>
+            <td>Jacques</td>
+        </tr>
+        <tr>
+            <th>Numéro 2</th>
+            <td>Sarkozy</td>
+            <td>Nicolas</td>
+        </tr>
+        <tr>
+            <th>Numéro 3</th>
+            <td>Macron</td>
+            <td>Emmanuel</td>
+        </tr>
+    </table>
+
+</body>
+</html>

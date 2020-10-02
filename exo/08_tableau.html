@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08_tableau</title>
+
+    <style>
+        body {
+            background-color: #fff;
+        }
+
+        td {
+            border: 2px solid #000;
+            padding: 10px;
+        	vertical-align: middle;
+        }
+
+        table {
+        background-color: lightpink;
+        border-style: double; 
+        margin: 20px;
+        width: 80%;
+        padding: 5px;
+        width: 50%;           
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    
+    <h1>Des tableaux</h1>
+    <section>
+        <h2>Un premier tableau</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Nom</td>
+                    <td colspan="2">Téléphones</td>
+                    <!-- <td></td> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tata</td>
+                    <td>06 14 15 16 17</td>
+                    <td>07 14 15 16 17</td>
+                </tr>
+                <tr>
+                    <td>Yoyo</td>
+                    <td>06 14 15 16 17</td>
+                    <td>07 14 15 16 17</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Un second tableau</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Nom :</td>
+                    <td>Annie Cordy</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="2">Tél : </td>
+                    <td>01 25 26 27 28</td>
+                </tr>
+
+                <tr>
+                    <!-- <td></td> -->
+                    <td>01 35 36 39 41</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <h2>un autre tableau (avec des balises th) </h2>
+        <table class="second">
+            <thead>
+                <tr>
+                    <th>IDENTIFIANT</th>
+                    <th>NOMS</th>
+                    <th>PRENOMS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>n° 1</th>
+                    <td>Chirac</td>
+                    <td>jacques</td>
+                </tr>
+                <tr>
+                    <th>n° 2</th>
+                    <td>Jospin</td>
+                    <td>Lionel</td>
+                </tr>
+                <tr>
+                    <th>n° 3</th>
+                    <td>Mouse</td>
+                    <td>Mickey</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+</body>
+</html>

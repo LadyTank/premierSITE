@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélecteur - CSS</title>
+    <style>
+
+        /* 1 - L'astérique cible tous les éléments de la page, on peut également cibler tous les sélecteurs enfants d'un élément. ex. : (à utiliser le moins possible)
+        
+        container * {
+            border : 1px solid black;
+        } 
+        
+        */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* 2- le symbole dièse pour cibler un élément par son id */
+
+        #container {
+            width: 960px;
+            margin: auto;
+            background-color: rgb(253, 246, 148);
+            font-family: sans-serif;
+            letter-spacing: 1px;
+            
+        }
+
+        /* 3 - le sélecteur de classe que l'on utilise plusieurs fois dans la même la même page */
+
+        .error {
+            background-color: red;
+            color: white;
+        }
+
+        /* 4 - les sélecteurs descendants pour cibler les a dans les li et uniquement ceux là*/
+
+        li a {
+            text-decoration: none;
+        }
+
+        /* 5 - les sélecteurs de type pour cibler les éléments d'une page */
+
+        ul {
+            background-color: rgb(250, 221, 59);
+            /* width: 300px; */
+            /* color: #fff; */
+        }
+
+        /* 6 - les pseudo-classes, ex : :link  tous les liens qui sont pas encore cliqués */
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        /* 7 - les sélecteurs adjacent ne selectionne que les p précédés d'une ul dans ce cas suivant */
+
+        ul + p {
+            background-color: #fff;
+        }
+
+        /* 8 - Le sélecteur d'enfant direct est très utile (surtout avec le java script*/
+
+        div#listing>ul {
+            border: 5px solid red;
+            background-color: olive;
+        }
+
+        /* 9 - ce combinateur frère est proche de x + y mais moins stricte */
+
+        h3 ~ p {
+            text-transform: uppercase;
+        }
+
+        /* 10 - les sélecteurs d'attributs */
+
+        a[title] {
+            background-color: rgba(39, 36, 36, 0.877);
+            color: white;
+        }
+
+        /* 11 - toutes les balises a qui contiennent un lien vers https://www.lemonde.fr/ */
+
+        a[href="https://www.lemonde.fr/"] {
+            background-color: pink;
+            color: red;
+        }
+
+        /* 12 - la valaur qui suit l'étoile doit apparaitre quelque part dans la valeur de l'attibut */
+        /* a[href*="mac"], a[href*="mon"] si je veux chercher 2 chaines de caractères*/
+        a[href*="mac"] {
+            background-color: tomato;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        /* 13 -  */
+
+        /* 14 -  */
+
+        /* 15 -  */
+
+        /* 16 -  */
+
+        /* 17 - Une pseudo-classe pour cibler un élément d'interface utilisateur */
+
+        /* input est un élement d'un formulaire, le bouton envoyer est radio, si il est checked on lui demande de devenir rouge */
+        input[type=radio]:checked + label {
+            border: 5px solid red;
+        }
+
+        /* 18 - */
+
+        /* 19 - pseudos-classe d'action utilisateur : :hover */
+        
+            a:hover {
+                border-bottom: 3px solid rgb(253, 141, 13);
+            }
+
+        /* 20 - la pseudo classe de négation */
+            /* toutes les div sauf celles de container */
+        div:not(#container) {
+            color: #fff;
+        }
+
+        /* 21 - pseudos élements identifés par "::" 
+        ; */
+
+        /* p::first-letter {
+            font-size: 2em;
+        } */
+
+        p#lettrine::first-letter {
+            font-size: 2em;
+            float: left;
+            padding-right: 5px;
+        }
+
+        /* 22 - la pseudos classe ELEMENT:nth-child(n) */
+
+        /* le chiffre entre parenthese est le numero de l'enfant du parent donc le deuxieme enfant de li dans ce cas précis */
+        #courses li:nth-child(2) {            background-color: yellow;
+            color: #fff;
+        }
+
+        /* 23 */
+
+        /* 24 */
+
+        /* 25 */
+    
+        /* 26 */
+
+        /* 27 - ELEMENT:last-child */
+
+        ul > li:last-child {
+            font-family: cursive;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <h1>Les sélecteurs CSS à connaître ...</h1>
+        <p>Il y a une <span class="error">erreure</span> dans cette phrase</p>
+        <p>Et dans celle-là <span class="error">aussie</span></p>
+        <hr>
+        <ul>
+            <li><a href="#">Rubrique 1</a></li>
+            <li><a href="#">Rubrique 2</a></li>
+            <li><a href="#" title="La rubrique">Rubrique 3</a></li>
+            <li><a href="#">Rubrique 4</a></li>
+        </ul>
+        <p>Un lien vers le site de mon choix <a href="https://macbidouille.com" target="_blank" title="macbidouille">Cliquez içi</a></p>
+        <p>Et là un lien vers <a href="https://macg.com/">Macgeneraion</a></p>
+        <h3>Titre 3</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ratione assumenda temporibus sunt aspernatur, doloribus eos, placeat obcaecati repellat sit corrupti vitae rem illo iusto et voluptatibus, quibusdam iure quod! <a href="https://www.lemonde.fr/" target="_blank">un lien vers le journal le monde</a></p>
+        <ul id="courses">
+            <li>Pain</li>
+            <li>Vin</li>
+            <li>Boursin</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sint libero eligendi eos, officia deleniti laudantium fugit atque voluptatum sunt. Eligendi nobis sit architecto, veritatis maiores odit totam sapiente animi.</p>
+        <hr>
+
+        <div id="listing">
+            <ul>
+                <li>Afrique
+                    <ul>
+                        <li>Maroc</li>
+                    </ul>
+                    <ul>
+                       <li>Senegal</li>
+                    </ul>
+
+                </li>
+                <li>Asie</li>
+                <li>Australie</li>
+                <li>Europe</li>
+                <li>Océanie</li>
+            </ul>
+
+
+        </div>
+
+        <p id="lettrine">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ad enim similique, quisquam nihil quidem dolore, cumque natus ab nemo non, voluptatum iure expedita? Assumenda laboriosam quia dicta veniam vero?</p>
+        <hr>
+        <!-- toujours avoir une balise form autour des input (interrupteur de formulaire pour envoyer des données) -->
+        <form action="#" method="post">
+            <!-- name and value obligatoire, valeur de ce qu'on envoie , cet input est un bouton à sélectionner ou non-->
+            <input type="radio" name="rad" value="bouton radio">
+            <!-- indication textuelle -->
+            <label for="rad">Bouton radio</label>
+        </form>
+    </div>
+</body>
+</html>

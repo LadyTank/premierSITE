@@ -8,7 +8,7 @@
      <!-- les mots clefs utiles pour les moteurs de recherche moins utilisées de nos jours -->
     <meta name="keywords" content="HTML, CSS, Justine Périnel, Colombbus, Suresnes, premier site, 2020">
     <meta name="author" content="Justine Périnel">
-    <title>PremierSITE - position</title>
+    <title>PremierSITE - tableaux</title>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> 
     <!-- LES ICÔNES EMBARQUÉES DEPUIS FONT AWESOME -->
     <script src="https://kit.fontawesome.com/c194d650bf.js" crossorigin="anonymous"></script>
@@ -43,9 +43,9 @@
             <a href="texte.html" title="Texte" >Texte</a>
             <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
             <a href="image.html" title="Images">Images</a>
-            <a href="position.html" title="Position" class="active">Position</a>
+            <a href="position.html" title="Position">Position</a>
             <a href="zoning.html" title="Zoning">Zoning</a>
-            <a href="tableau.html" title="Tableaux">Tableaux</a>
+            <a href="tableau.html" title="Tableaux" class="active">Tableaux</a>
             <a href="liste.html" title="Listes">Listes</a>
             <a href="liens.html" title="Liens">Liens</a>
             <a href="formulaire.html" title="Formulaire">Formulaire</a>
@@ -55,82 +55,62 @@
         </div>
     </nav>
     <main> 
-        <h2>Position</h2>
-        <section>
-           <h3>Centrer un élément de type bloc</h3>
-           <div class="centre">n°1</div>
+        <h2>Tableaux <i class="fas fa-table"></i></h2>
+
+        <section class="tableau">
+            <table>
+                <caption><i class="fas fa-plane"></i>Vols Paris / Rome</caption>
+                <thead>
+                    <!-- tr*5>td*4{$} -->
+                    <tr>
+                        <td>Dates</td>
+                        <td>20/09/2020</td>
+                        <td>31/10/2020</td>
+                        <td>01/11/2020</td>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td>Dates</td>
+                        <td>23/01/2021</td>
+                        <td>02/02/2021</td>
+                        <td>21/02/2021</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Air France</td>
+                        <td>18 mn</td>
+                        <td>5 h</td>
+                        <td>17 h</td>
+                    </tr>
+                    <tr>
+                        <!-- <td>1</td> -->
+                        <td>200 Euros</td>
+                        <td>70 Euros</td>
+                        <td>99 Euros</td>
+                    </tr>
+                    <tr>
+                        <!-- rowspan = fusionne dans la rangée de haut en bas -->
+                        <td rowspan="2">Air Canada</td>
+                        <td>20 h</td>
+                        <td>19 h</td>
+                        <td>4 h</td>
+                    </tr>
+                    <tr>
+                        <!-- <td>1</td> -->
+                        <td>20 Euros</td>
+                        <td>300 Euros</td>
+                        <td>138 Euros</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
-        <section>
-            <h3>Position "absolute"</h3>
-            <p>n°2 : un carré jaune; ...eh regardez en haut ! </p>
-            <div class="absolute">n°2</div>
-        </section>
 
-        <section>
-            <h3>Position relative</h3>
-            <div class="relative">
-                <div>n°3</div>
-            </div>
-        </section>
         
-        <section>
-            <h3>Postion fixed</h3>
-            <p>cf. le bouton vers le haut de la page (en bas à droite)</p>
-        </section>
-
-        <section>
-            <h3>Le pourcentage</h3>
-            <div class="trente">30%</div>
-            <div class="cinquante">50%</div>
-            <div class="cent">100%</div>
-        </section>
-
-        <section>
-            <h3>L'attribut float</h3>
-            <div class="float">1</div>
-            <div class="float">2</div>
-            <div class="float">3</div>
-            <div class="float">4</div>
-            <div class="float clear">5</div>
-            <div class="float">6</div>
-            <div class="float">7</div>
-            <div class="float clear">8</div>
-            <div class="float">9</div>
-            <div class="clear"></div>
-            <div class="dernier clear">10</div>
-        </section>
-
-        <section>
-            <h3>Autre exemple sur le float</h3>
-            <div class="zone"></div>
-
-            <div class="zone1"></div>
-            <div class="zone2"></div>
-            <div class="zone3"></div>
-            <div class="zone4"></div>
-            
-            <div class="zone clear"></div>
-        </section>
-
-
-        <section>
-            <h3>Flexbox</h3> <!-- se place en fonction de l'élément parent -->
-            <article class="flex">
-                <div class="carre">1</div>
-                <div class="carre">2</div>
-                <div class="carre">3</div>
-                <div class="carre">4</div>
-            </article>
-
-
-        </section>
-
-
+      
     </main> <!-- fin de main  -->
-    <footer>
-        <!-- Pied de page -->
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis repudiandae eaque veniam dolores nesciunt omnis fugit iste tenetur ducimus optio numquam itaque expedita vitae nihil, libero rerum. Impedit, excepturi?</p>
-    </footer>
+    <footer> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis repudiandae eaque veniam dolores nesciunt omnis fugit iste tenetur ducimus optio numquam itaque expedita vitae nihil, libero rerum. Impedit, excepturi?</p></footer>
    </body>
 </html>

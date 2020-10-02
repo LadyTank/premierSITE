@@ -985,3 +985,216 @@ iframe[allowfullscreen] {
 .audio {
 	text-align: center;
 }
+
+
+/* Flexbox */
+
+.carre {
+	width  : 150px;
+	height : 150px;
+	background : rgb(167, 24, 79);
+	color: #fff;
+	margin: 5px;
+	line-height: 150px;
+	text-align: center;
+	font-size: 2em;
+  }
+
+	/* la classe pour créer une rangée */
+	.row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		/* margin-bottom: 15px; */
+		/* justify-content: space-around; */
+	}
+
+	.row-reverse {
+		display:flex;
+		flex-direction: row-reverse;
+		flex-wrap: wrap;
+		/* text-align: center; */
+	}
+
+	/* Flexbox */
+
+	.flex {
+		display: flex;
+		/* les div également réparties horizontalement */
+		/* justify-content: space-between; */
+
+		/* avec un espace égal autour de chaque div */
+		/* justify-content: space-around; */
+
+		/* de haut en bas en mode colonne */
+		/* flex-direction: column; */
+
+		/* inverser les div en mode colonne */
+		/* flex-direction: column-reverse; */
+
+		/* inverser les dib horizontalement */
+		flex-direction: row-reverse;
+	}
+	
+  /* Définition de la largeur des colonnes en pourcentage */
+/* grille 12 colonnes */
+.col-1 {
+    width: 8.333333%;
+}
+
+.col-2 {
+    width: 16.666666%;
+    /* background-color: rgb(255, 145, 0); */
+}
+
+.col-3 {
+    width: 25%;
+    /* background-color: rgb(241, 172, 44); */
+}
+
+.col-4 {
+    width: 33.333333%;
+    /* background-color: rgb(247, 215, 34); */
+}
+
+.col-5 {
+    width: 41.666666%;
+    /* background-color: rgb(196, 216, 20); */
+}
+
+.col-6 {
+    width: 50%;
+    /* background-color: rgb(105, 238, 71); */
+}
+
+.col-7 {
+    width: 58.333333%;
+    /* background-color: rgb(35, 189, 29); */
+}
+
+.col-8 {
+    width: 66.666666%;
+    /* background-color: rgb(44, 224, 185); */
+}
+
+.col-9 {
+    width: 75%;
+    /* background-color: rgb(32, 212, 224); */
+}
+
+.col-10 {
+    width: 83.333333%;
+    /* background-color: rgb(69, 130, 221); */
+}
+
+.col-11 {
+    width: 91.666666%;
+    /* background-color: rgb(206, 83, 236); */
+}
+
+.col-12 {
+    width: 100%;
+    /* background-color: rgb(218, 50, 176); */
+}
+
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
+    /* background-color: wheat; */
+}
+.marge-2 {
+    margin-left: 16.666666%;
+    /* background-color: yellowgreen; */
+}
+.marge-3 {
+    margin-left: 25%;
+    /* background-color: violet; */
+}
+.marge-4 {
+    margin-left: 33.333333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}
+
+
+
+/* les formulaires */
+
+/* #formulaire form {
+	background-color: #069;
+	color: #6acafc;
+	border-radius: 2em;
+	width: 800px;
+	padding: 30px;
+	margin: 0 auto;
+} */
+
+form {
+	width: 80%;
+	margin: 0 auto;
+	padding: 15px;
+	background-color: #2D5C7F;
+	color: #d0e3fa;
+	border-radius: 20px;
+}
+	
+label {
+	margin: 20px 10px;
+}
+
+form p {
+	margin: 10px;
+}
+
+textarea {
+	/* pour eviter le redimensionnement de la zone de saisie du textarea */
+	resize: none;
+}
+
+label[for="orange"], [for="fraise"], [for="kiwi"], [for="cerise"] {
+	background-color: red;
+	color: #fff;
+}
+
+/* style tableau */
+
+.tableau table {
+	border: 2px solid #000;
+	border-collapse: collapse;
+	margin: auto;
+	width: 80%;
+	padding: 5px;
+}
+
+.tableau td {
+	border: 2px solid #000;
+	padding: 10px;
+	/* text-align: left; */
+	vertical-align: middle;
+}
+
+.tableau thead, .tableau tfoot {
+	background: #d0e3fa;
+	border: 5px solid #6495ed;
+	text-align: center;
+
+}

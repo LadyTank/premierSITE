@@ -42,7 +42,7 @@
             <a href="index.html" title="Accueil">Accueil</a>
             <a href="texte.html" title="Texte" >Texte</a>
             <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
-            <a href="image.html" title="Images" class="active">Images</a>
+            <a href="image.html" title="Images">Images</a>
             <a href="position.html" title="Position">Position</a>
             <a href="zoning.html" title="Zoning">Zoning</a>
             <a href="tableau.html" title="Tableaux">Tableaux</a>
@@ -54,8 +54,140 @@
             <a href="recap.html" title="Récapitulatif">Récapitulatif</a>
         </div>
     </nav>
-    <main> 
-        <h2>Formulaire <i class="fas fa-file-alt"></i></h2>
+    <main id="formulaire"> 
+        <h2>Formulaire <i class="fas fa-sign-in-alt"></i></h2>
+
+        <!-- action= on mettra un fichier, dans method= on mettra le protocole POST ou GET -->
+
+    <section>
+        <form action="formulaire.php" method="POST">
+            <fieldset>
+                <label for="pseudo">Pseudonyme*</label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" required>
+            </fieldset>
+        
+            <fieldset>
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required>
+            </fieldset>
+        
+            <fieldset>
+                <label for="mdp">Mot de passe</label>
+        
+                <input type="password" name="mdp" id="mdp" placeholder="Votre mot de passe" required>
+            </fieldset>
+        
+            <fieldset>
+                <label for="courriel">Couriel</label>
+        
+                <input type="courriel" name="courriel" id="courriel" placeholder="Votre adresse mail" required>
+            </fieldset>
+        
+            <!-- faire un fichier à integrer en parcourir -->
+            <fieldset>
+                <label for="cv" name="cv" id="cv">Votre cv en pdf</label>
+        
+                <input type="file" id="docpicker" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+        
+            </fieldset>
+        
+            <fieldset class="fruit">
+                <label for="question" name="question" id="question">Quels sont vos fruits préférés ?</label> <br>
+        
+                <input type="checkbox" name="qualite" value="orange">Orange
+                    <input type="checkbox" name="qualite" value="fraise">Fraise
+                    <input type="checkbox" name="qualite" value="kiwi">Kiwi 
+                    <input type="checkbox" name="qualite" value="cerise">Cerise 
+        
+            </fieldset>
+        
+            <fieldset>
+                    <p>
+                        <label for="legume">Si vous devez sauver un légume de la destruction : lequel ? </label><br />
+                        <select name="légume" id="legume">
+                            <option value="poireau">Poireau</option>
+                            <option value="artichaud">Artichaud</option>
+                            <option value="carotte">Carotte</option>
+                            <option value="pommedeterre">Pomme-de-terre</option>
+                            <option value="laitue">Laitue</option>
+                            <option value="aubergine">Aubergine</option>
+                            <option value="celeri">Celeri</option>
+                            <option value="courgette">Courgette</option>
+                        </select>
+                    </p>
+        
+                    <label for="message">Message</label>
+                    <textarea name="ameliorer" id="ameliorer" rows="10" cols="50">
+                        Améliorer ton site ?!
+                        Mais enfin ! Il est tellement génialissime qu'il n'est pas nécessaire de l'améliorer !
+                        </textarea>       
+                 </form>
+               <fieldset>
+            
+
+            <!-- pour envoyer le formulaire = un INPUT de type submit -->
+
+            <!-- L'attribut value envoie une valeur, une information utile à l'envoie du formulaire ou à la récupération de données -->
+            
+            <input type="submit" name="envoyer" value="Envoyer">
+    <!-- pour ré-initialiser le formulaire = un INPUT de type reset -->
+                
+            <input type="reset" name="annuler" value="Annuler">
+        </fieldset>
+    </section>
+         
+
+ 
+
+    <section class="formulaire">
+        <!-- action = url de destination (ou adresse url ou un fichier) parfois ce la peut etre vide -->
+        <!-- method = manière de faire circuler les données (post OR get ou post ou get) (envoyer ou récupérer) -->
+        <form action="formulaire.php" method="POST" enctype="multipart/form-data">
+
+            <label for="pseudo">Pseudo *</label>
+            <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" required>
+            <br>
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Votre prénom">
+            <br>
+            <label for="password">Mot de passe *</label>
+            <input type="password" name="password" id="password" placeholder="Votre mort de passe" required> 
+            <br>
+            <label for="email">Courriel</label>
+            <input type="email" name="email" id="email" placeholder="Votre courriel" required>
+
+            <p>Quels sont vos fruits préférés</p>
+
+            <!-- les checkbox ont le meme nom et on passera les info, en php, dans un tableau [] -->
+            <label for="orange">Orange</label>
+            <input type="checkbox" name="fruit[]" id="orange" value="orange">
+
+            <label for="fraise">Fraise</label>
+            <input type="checkbox" name="fruit[]" id="fraise" value="fraise">
+
+            <label for="kiwi">Kiwi</label>
+            <input type="checkbox" name="fruit[]" id="kiwi" value="kiwi">
+
+            <label for="cerise">Cerise</label>
+            <input type="checkbox" name="fruit[]" id="cerise" value="cerise" checked>
+
+            <p>Si vous devez sauver un légume de la destruction : lequel ?</p>
+
+            <select name=legumes id="legumes">
+                <option value="poireau">Poireau</option>
+                <option value="artichaud">Artichaud</option>
+                <option value="carotte" selected>Carotte</option>
+                <option value="pommedeterre">Pomme-de-terre</option>
+                <option value="laitue">Laitue</option>
+            </select>
+            <br>
+            <label for="message">Votre commentaire : </label>
+            <textarea name="message" id="message" cols="60" rows="10" placeholder="Dites ce que vous pensez"></textarea>
+            <br>
+            <input type="submit" name="envoyez" value="Envoyez">
+            <input type="reset" name="annuler" value="Annuler">
+        </form>
+    </section>
       
     </main> <!-- fin de main  -->
     <footer> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis repudiandae eaque veniam dolores nesciunt omnis fugit iste tenetur ducimus optio numquam itaque expedita vitae nihil, libero rerum. Impedit, excepturi?</p></footer>
