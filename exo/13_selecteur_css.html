@@ -68,7 +68,7 @@
 
         /* 8 - Le sélecteur d'enfant direct est très utile (surtout avec le java script*/
 
-        div#listing>ul {
+        div#listing > ul {
             border: 5px solid red;
             background-color: olive;
         }
@@ -146,11 +146,15 @@
         /* 22 - la pseudos classe ELEMENT:nth-child(n) */
 
         /* le chiffre entre parenthese est le numero de l'enfant du parent donc le deuxieme enfant de li dans ce cas précis */
-        #courses li:nth-child(2) {            background-color: yellow;
+        ul#courses li:nth-child(2) {            background-color: yellow;
             color: #fff;
         }
 
-        /* 23 */
+        /* 23 - pour sélectionner le deuxieme à partir du dernier*/
+
+        ul#departements li:nth-last-child(2) {
+            background-color: #fff;
+        }
 
         /* 24 */
 
@@ -158,10 +162,73 @@
     
         /* 26 */
 
+        ul#departements li {
+            border-top: 1px solid purple;
+            border-bottom: 1px solid purple;
+            padding: 2px;
+            list-style-image: url(../img/starmini.png);
+        }
+
+        ul#departements li:first-child {
+            border-top: none;
+        }
+
         /* 27 - ELEMENT:last-child */
 
         ul > li:last-child {
             font-family: cursive;
+        }
+
+        ul#departements li:last-child {
+            border-bottom: none;
+        }
+
+        ul#mini-menu {
+            width: 200px;
+            background-color: rgb(134, 112, 112);
+            color: #fff;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul#mini-menu li {
+            padding: 20px;
+            border-bottom: 1px solid #000;
+            border-top: 1px solid #000;
+        }
+
+        ul#mini-menu li:first-child {
+            border-top: none;
+        }
+
+        ul#mini-menu li:last-child {
+            border-bottom: none;
+        }
+
+        /* 28 - ELEMENT:only-child */
+        article p:only-child {
+            color: orangered;
+        }
+
+        /* 29- ELEMENT:first-of-type */
+
+        /*  > est le selecteur d'enfant direct vu numero 8 */
+        article ul:first-of-type > li:nth-child(2) {
+            font-weight: bold;
+        }
+
+        /* + selecteur adjacent, le precedent */
+        /* voir la liste de course pour la modif */
+        p + ul li:last-child {
+            color: red;
+        }
+
+        article ul:first-of-type li:nth-last-child(1) {
+            font-size: 100px;
+        }
+
+        ol li {
+            list-style: upper-roman;
         }
 
     </style>
@@ -221,6 +288,104 @@
             <!-- indication textuelle -->
             <label for="rad">Bouton radio</label>
         </form>
+        <hr>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium aspernatur iure corrupti eligendi, iste, suscipit rerum officiis quos ut neque eaque maxime debitis ab saepe ipsum ratione recusandae? Ullam, alias?</p>
+
+        <h2>La liste des déparements français</h2>
+        <ul id="departements">
+            <li>01 - Ain - Bourg-en-bresse</li>
+            <li>02 - Aisne - Laon</li>        
+            <li>03 - Allier - Moulins</li>        
+            <li>04 - Alpes-de-Haute-Provence - Digne-les-bains</li>      
+            <li>05 - Hautes-alpes - Gap </li>       
+            <li>06 - Alpes-maritimes - Nice</li>        
+            <li>07 - Ardèche - Privas </li>       
+            <li>08 - Ardennes - Charleville-mézières</li>        
+            <li>09 - Ariège - Foix</li>        
+            <li>10 - Aube - Troyes</li>
+            <li>11 - Aude - Carcassonne</li>
+            <li>12 - Aveyron - Rodez</li>
+            <li>13 - Bouches-du-Rhône - Marseille</li>
+            <li>14 - Calvados - Caen</li>
+            <li>15 - Cantal - Aurillac</li>
+            <li>16 - Charente - Angoulême</li>
+            <li>17 - Charente-maritime - La rochelle</li>
+            <li>18 - Cher - Bourges</li>
+            <li>19 - Corrèze - Tulle</li>
+            <li>2A - Corse-du-sud - Ajaccio</li>
+            <li>2B - Haute-Corse - Bastia</li>
+            <li>21 - Côte-d'Or - Dijon</li>
+            <li>22 - Côtes-d'Armor - Saint-brieuc</li>
+            <li>23 - Creuse - Guéret</li>
+            <li>24 - Dordogne - Périgueux</li>
+            <li>25 - Doubs - Besançon</li>
+            <li>26 - Drôme - Valence</li>
+            <li>27 - Eure - Évreux</li>
+            <li>28 - Eure-et-loir - Chartres</li>
+            <li>29 - Finistère - Quimper</li>
+            <li>30 - Gard - Nîmes</li>
+            <li>31 - Haute-garonne - Toulouse</li>
+            <li>32 - Gers - Auch</li>
+            <li>33 - Gironde - Bordeaux</li>
+            <li>34 - Hérault - Montpellier</li>
+            <li>35 - Ille-et-vilaine - Rennes</li>
+            <li>36 - Indre - Châteauroux</li>
+            <li>37 - Indre-et-loire - Tours</li>
+            <li>38 - Isère - Grenoble</li>
+            <li>39 - Jura - Lons-le-saunier</li>
+            <li>40 - Landes - Mont-de-marsan</li>
+        </ul>
+
+        <hr>
+
+        <h2>Un mini menu</h2>
+        <ul id="mini-menu">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+        </ul>
+
+        <hr>
+
+        <h2>Des paragraphes</h2>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime unde ea quasi! Quibusdam, ut. Fugit officia quasi quisquam voluptates inventore pariatur aperiam consequuntur! Reiciendis voluptatum accusantium vitae placeat, suscipit nihil.</p>
+        </article>
+        <article>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda consequuntur nobis velit sequi! Aspernatur pariatur dolore ea perspiciatis soluta neque voluptate, eum, ipsum sapiente maiores fugit. Aliquid, veniam dolore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem debitis ipsum saepe aut corrupti est officiis culpa rerum mollitia impedit, voluptates ullam, nesciunt eligendi consequuntur repellat. Aspernatur, nisi a! Id?</p>
+        </article>
+
+        <hr>
+        <h2>suite...</h2>
+
+        <article>
+            <p>Mon paragraphe içi</p>
+            <ul>
+                <li>Element liste 1</li>
+                <li>Element liste 2</li>
+            </ul>
+            <ul>
+                <li>Element liste 3</li>
+                <li>Element liste 4</li>
+            </ul>
+
+        </article>
+
+        <hr>
+    <ol>
+        <li>Coucou 1</li>
+        <li>Coucou 2</li>
+        <li>Coucou 3</li>
+        <li>Coucou 4</li>
+        <li>Coucou 5</li>
+        <li>Coucou 6</li>
+        <li>Coucou 7</li>
+        <li>Coucou 8</li>
+        <li>Coucou 9</li>
+        <li>Coucou 10</li>
+    </ol>
+        <!-- fin de container -->
     </div>
 </body>
 </html>
